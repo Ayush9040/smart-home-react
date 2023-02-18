@@ -2,6 +2,11 @@
 #{$app}- {
   &nav {
     background-color: #1E5AFA !important;
+    &-left{
+      &_links{
+        color: white !important;
+      }
+    }
      }
 }
 
