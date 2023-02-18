@@ -1,0 +1,174 @@
+
+
+#{$app}-{
+  &section{
+    &__{
+      &coures-title{
+        font-size:calc(var(--text-4xl));
+        @include respond-above(md){
+          font-size:calc(var(--text-6xl) - 6px);
+        }
+        line-height: var(--size-9);
+        color: var(--color-black3);
+        font-weight: var(--font-bold);
+        font-family: var(--body-font);
+      }
+      &title{
+        color: var(--color-dark);
+        font-size: var(--text-4xl);
+        font-weight: var(--font-semibold);
+        font-family: var(--head-font);
+        line-height: 40px;
+
+        @include respond-above(sm) {
+          font-size: var(--text-section);
+          line-height: var(--leading-12);
+        }
+        @include respond-above(lg) {
+          font-size: var(--text-6xl);
+          line-height: 60px;
+        }
+
+        &--{
+          &highligh{
+            font-weight: var(--font-bold);
+          }
+          &max-width-300{
+            max-width: 300px;
+          }
+          &max-width-900{
+            max-width: 900px;
+            margin: auto;
+          }
+          &max-width-532{
+            max-width: 532px;
+            margin: auto;
+          }
+          &max-width-565{
+            max-width: 565px;
+            margin: auto;
+          }
+          &max-width-400{
+            max-width: 400px;
+            margin: auto;
+          }
+        }
+      }
+      &sub {
+        &- {
+          &title {
+            // for desktop
+          color: var(--color-dark);
+          font-size: var(--text-4xl);
+          font-weight: var(--font-semibold);
+          font-family: var(--ff-montserrat);
+          line-height: 40px;
+            @include respond-below(lg) {
+              font-size: var(--text-3xl);
+              line-height: 36px;
+            }
+            @include respond-below(sm) {
+              font-size: var(--text-2xl);
+              line-height: 32px;
+            }
+          }
+          &max-width-1000{
+            max-width: 1000px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  &para{
+    font-size: var(--text-md);
+    line-height: 24px;
+    color: var(--color-secondary);
+    font-family: var(--body-font);
+    @media(min-width:$breakpoint-md){
+      font-size: var(--text-lg);
+      line-height: 24px;
+    }
+  }
+  &mt {
+    &__ {
+      &80 {
+        @include respond-above(lg) {
+          margin-top: 80px !important;
+        }
+      }
+    }
+  }
+  &text-justify {
+    text-align: justify;
+  }
+  &title {
+    &__ {
+      &bold {
+        & strong {
+          font-weight: bold
+        }
+        &-- {
+          &green {
+            & strong {
+              color: var(--color-primary)
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// opacity
+
+@include Opacity;
+
+// Line Heights
+
+@include LineHeights;
+
+.custom-input {
+  input {
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  &1 {
+    input {
+      background: none;
+      border: 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+}
+.lh-30 {
+  line-height: 24px;
+  @include respond-above(md) {
+    line-height: 30px;
+  }
+}
+.lh-48 {
+  line-height: 30px;
+  @media screen and (min-width: 576px) {
+    line-height: 42px;
+  }
+  @include respond-above(md) {
+    line-height: 48px;
+  }
+}
+.lh-54 {
+  line-height: 36px; 
+  @include respond-above(sm) {
+    line-height: 42px;
+  }
+  @include respond-above(md) {
+    line-height: 54px;
+  }
+}
+.lh-51 {
+  line-height: 30;
+  @include respond-above(md) {
+    line-height: 51px;
+  }
+}

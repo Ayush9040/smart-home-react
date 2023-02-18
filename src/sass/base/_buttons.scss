@@ -1,0 +1,287 @@
+
+
+#{$app}- {
+  &button {
+    &__ {
+      &primary {
+        height: 50px;
+        border: 0px;
+        padding: 5px 5px 5px 21px;
+        border-radius: 25px;
+        color: var(--color-light);
+        font-size: 14px;
+        &-- {
+          &admissionSupport {
+            height: 35px;
+          }
+        }
+        &- {
+          &arrow {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            background-color: var(--color-light);
+            &--rotated {
+              transform: rotate(90deg);
+            }
+            &--admissionSupport {
+              height: 26px;
+              width: 26px;
+            } 
+          }
+        }
+      }
+      // &secondary{
+
+      // }
+      &ternary {
+        border: 2px solid #000 !important;
+        padding: 5px 10px 5px 20px;
+        border-radius: 25px;
+        color: var(--color-light);
+        // font-size: 14px;
+        &- {
+          &arrow {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            background-color: var(--color-primary) !important;
+          }
+        }
+      }
+      &videoplay {
+        width: 11px;
+        height: 12px;
+        border-left: 11px solid var(--color-light);
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        &:hover {
+          background: linear-gradient(
+            to right,
+            #5fb858 -200%,
+            #00262b -100%,
+            #5fb858 0%,
+            #00262b 100%
+          );
+          border: "2px solid #5FB858";
+        }
+        &- {
+          &primary {
+            cursor: pointer;
+            position: relative;
+            // transform: translateX(-50%) translateY(-50%);
+            box-sizing: content-box;
+            display: block;
+            width: 32px;
+            height: 44px;
+            /* background: #ffffff; */
+            border-radius: 50%;
+            padding: 18px 20px 18px 28px;
+            &:before {
+              content: "";
+              position: absolute;
+              z-index: 0;
+              left: 50%;
+              top: 50%;
+              transform: translateX(-50%) translateY(-50%);
+              display: block;
+              width: 80px;
+              height: 80px;
+              background: #ffffff89;
+              border-radius: 50%;
+              -webkit-animation: pulse-border 1500ms ease-out infinite;
+              animation: pulse-border 1500ms ease-out infinite;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              z-index: 1;
+              left: 50%;
+              top: 50%;
+              transform: translateX(-50%) translateY(-50%);
+              display: block;
+              width: 65px;
+              height: 65px;
+              background: #ffffff89;
+              border-radius: 50%;
+              transition: all 200ms;
+            }
+            span {
+              display: block;
+              position: relative;
+              margin-top: 8px;
+              margin-left: 4px;
+              z-index: 3;
+              width: 0;
+              height: 0;
+              border-left: 25px solid var(--color-primary);
+              border-top: 15px solid transparent;
+              border-bottom: 15px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#{$app}- {
+  &btn {
+    &__ {
+      &primary {
+        height: 50px;
+        background-color: var(--color-primary);
+        padding-left: var(--size-4);
+        padding-right: var(--size-2);
+        border-radius: 30px;
+        border: 2px solid var(--color-primary);
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+#{$app}- {
+  &nPlayButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background: #5fb858;
+ 
+
+    &::after {
+      opacity: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0;
+      bottom: 0;
+      content: "";
+      height: 100%;
+      width: 100%;
+      border: 8px solid rgba(94, 184, 88, 1);
+      border-radius: 100%;
+      -webkit-animation-name: ripplen;
+      animation-name: ripplen;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+      animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+      z-index: -1;
+    }
+    &::before {
+      opacity: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      height: 100%;
+      width: 100%;
+      border: 8px solid rgba(94, 184, 88, 1);
+      border-radius: 100%;
+      -webkit-animation-name: ripplen;
+      animation-name: ripplen;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+      animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+      z-index: -1;
+    }
+    &--light{
+      background: rgba(255, 255, 255, 0.9);
+      &::after {
+        content: "";
+        border: 8px solid rgba(255, 255, 255, 1);;
+      }
+      &::before {
+        content: "";
+        border: 8px solid rgba(255, 255, 255, 1);;
+      }
+    }
+    &__ {
+      &playIcon {
+        position: relative;
+        left: 3px;
+        top: 0px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes ripplen {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
+
+@keyframes ripplen {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
+
+#{$app}- {
+  &enrollButton {
+    border-radius: 30px;
+    padding: 10px 15px;
+    background: linear-gradient(
+      to right,
+      #5a69f5 19.81%,
+      #3a45af 65.8%,
+      #231593 89.38%,
+      #190087 100%
+    );
+    &__ {
+      &icon {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes animateButton {
+  from {
+    background: linear-gradient(to right, #5FB858 -100%, #00262b 0%, #5FB858 100%, #00262b 200%);
+  }
+  to {
+    background: linear-gradient(to right, #5FB858 0%, #00262b 100%, #5FB858 200%, #00262b 300%);
+  }
+}
