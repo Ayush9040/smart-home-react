@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Hero from '../Home/Hero';
 import About from '../Home/About';
 import Clients from '../Home/Clients';
+import Testimonial from '../Home/Testimonial';
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
           <Hero />
           <About />
           <Clients />
+          <Testimonial />
         </main>
         <Footer />
     </div>
