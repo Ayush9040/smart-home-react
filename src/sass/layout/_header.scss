@@ -1,13 +1,27 @@
 
 #{$app}- {
   &nav {
-    background-color: #1E5AFA !important;
+    background-color: $theme-color !important;
     &-left{
       &_links{
-        color: white !important;
+        color: $font-color !important;
+      }
+      }
+
+    &-right{
+      &_links{
+        color: $font-color !important;
+      }
+      &_btn{
+        margin-left: 12px;
+        background-color: #FFFFFF;
+        color: #011037;
+        font-weight: 200;
+        border-radius: 0px !important;
+        border: none !important;
       }
     }
-     }
+    }
 }
 
 .ms-dropdown__submenu{
