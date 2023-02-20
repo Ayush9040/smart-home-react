@@ -2,7 +2,12 @@
     &testimonial{
         padding-top: 5%;
         @media(max-width: 800px){
-            padding-top: 5%;
+            padding-top: 8% !important;
+         }
+        &_card{
+            &:hover{
+                background-color: #FAFAFA !important;
+            }
         }
         &_heading{
             font-size: 85px;

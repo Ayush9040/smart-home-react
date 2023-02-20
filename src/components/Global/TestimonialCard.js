@@ -7,15 +7,15 @@ const TestimonialCard = ({
   authorDesignation,
 }) => {
   return (
-      <div className="sm-tcard">
-        <p className="sm-tcard__desc">{authorTestimonails}</p>
+      <div className="sh-tcard">
+        <p className="sh-tcard_desc">{authorTestimonails}</p>
         <div className="sm-tcard__author d-flex">
-          <div className="sm-tcard__author-avatar me-2">
+          <div className="sh-tcard_author-avatar me-3">
             <img src={authorAvatar} alt="" />
           </div>
           <div>
-            <p className="sm-tcard__author-name">{authorName}</p>
-            <p className="sm-tcard__author-designantion">{authorDesignation}</p>
+            <p className="sh-tcard_author-name">{authorName}</p>
+            <p className="sh-tcard_author-designantion">{authorDesignation}</p>
           </div>
 
         </div>

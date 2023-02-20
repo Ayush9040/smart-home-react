@@ -1,0 +1,24 @@
+#{$app}-{
+    &faq{
+        padding-top: 5%;
+        @media(max-width: 800px){
+            padding-top: 8% !important;
+        }
+        &_heading{
+            font-size: 85px;
+            text-align: center;
+            @media(max-width: 800px){
+                width: 100% !important;
+                font-size: 50px;
+            }
+            @media(min-width: 801px) and (max-width: 1100px){
+                width: 100% !important;
+                font-size: 85px;
+            }
+        }
+        &_acc-container{
+            padding: 3% 8%;
+            text-align: center;
+        }
+    }
+}
