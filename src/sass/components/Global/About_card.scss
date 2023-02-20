@@ -1,0 +1,43 @@
+#{$app}-{
+    &about-card{
+        padding-top: 5%;
+        &_img{
+            width: 100% !important;
+            position: relative;
+            z-index: 999 !important;
+        }
+        &_heading{
+            padding-bottom: 2%;
+            font-size: 46px;
+            color: #000F37;
+        }
+        &_content{
+            padding-bottom: 2%;
+            font-size: 20px;
+            color: #575757;
+        }
+        &_left{
+            position: relative;
+        }
+        &_btn{
+            padding: 12px 24px;
+            background-color: #000F37;
+            border: none;
+            font-size: 18px;
+            color: #FAFAFA;
+        }
+    }
+}
+
+.element::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 30%;
+    bottom: 30%;
+    background-color: $theme-color;
+    transform: translate(45%);
+    border-radius: 12px;
+  }
+

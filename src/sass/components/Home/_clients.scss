@@ -1,0 +1,41 @@
+#{$app}-{
+    &client{
+        @media(max-width: 800px){
+            padding-top: 5%;
+        }
+        &_heading{
+            font-size: 85px;
+            text-align: center;
+            @media(max-width: 800px){
+                width: 100% !important;
+                font-size: 50px;
+            }
+            @media(min-width: 801px) and (max-width: 1100px){
+                width: 100% !important;
+                font-size: 85px;
+            }
+        }
+        &_content{
+            font-size: 18px;
+            color: #575757;
+            width: 52% !important;
+            padding-top: 3%;
+            font-size: 18px;
+            text-align: center;
+            @media(max-width: 800px){
+                width: 100% !important;
+                font-size: 15px;
+            }
+            @media(min-width: 801px) and (max-width: 1100px){
+                width: 100% !important;
+                font-size: 18px;
+            }
+        }
+        &_img-wrapper{
+            width: 22% !important;
+        }
+        &_img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+#{$app}-{
+    &hero{
+        background: linear-gradient(to bottom, $theme-color, white);
+        color: $font-color;
+        &_main-heading{
+            padding-top: 5%;
+            width: 42% !important;
+            font-size: 85px;
+            text-align: center;
+            @media(max-width: 800px){
+                width: 100% !important;
+                font-size: 50px;
+            }
+            @media(min-width: 801px) and (max-width: 1100px){
+                width: 100% !important;
+                font-size: 85px;
+            }
+        }
+        &_content{
+            width: 52% !important;
+            padding-top: 3%;
+            font-size: 18px;
+            text-align: center;
+            @media(max-width: 800px){
+                width: 100% !important;
+                font-size: 15px;
+            }
+            @media(min-width: 801px) and (max-width: 1100px){
+                width: 100% !important;
+                font-size: 18px;
+            }
+        }
+        &_img-container{
+            width: 80% !important;
+            @media(max-width: 800px){
+                padding-top: 5%;
+            }
+        }
+        &_main-img{
+            width: 100% !important;
+        }
+        &_download-container{
+            @media(max-width: 500px){
+                width: 60% !important;
+                img {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}

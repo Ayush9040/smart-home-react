@@ -13,6 +13,10 @@ const Hero = () => {
                     <div className='sh-hero_img-container'>
                         <img className='sh-hero_main-img' src='/images/Home/hero-phone.png' />
                     </div>
+                    <div className='sh-hero_download-container'>
+                        <img src='/images/Home/app-store.png' />
+                        <img src='/images/Home/download.png' />
+                    </div>
                 </div>
             </div>
         </div>
