@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className='sh-hero'>
-        <div className='container'>
+        <div className='container sh-hero_wrapper'>
             <div className='row'>
                 <div className='col-12 d-flex flex-column align-items-center justify-content-center'>
                     <h3 className='sh-hero_top-heading'>smartHome</h3>

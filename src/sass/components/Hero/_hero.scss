@@ -2,5 +2,24 @@
     &hero{
         background-color: $theme-color;
         color: $font-color;
+        position: relative;
+        height: 93vh;
+        &_wrapper{
+            position: absolute;
+            left: 0 !important;
+            right: 0 !important;
+        }
+        &_main-heading{
+            padding-top: 5%;
+            width: 42% !important;
+            font-size: 85px;
+            text-align: center;
+        }
+        &_content{
+            width: 52% !important;
+            padding-top: 3%;
+            font-size: 18px;
+            text-align: center;
+        }
     }
 }
