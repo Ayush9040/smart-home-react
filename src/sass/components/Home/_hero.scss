@@ -5,7 +5,7 @@
         @media(max-width: 800px){
             background: linear-gradient(to bottom, $theme-color 70%, white 30%);
         }
-        &_main-heading{
+        &__main-heading{
             padding-top: 5%;
             width: 42% !important;
             font-size: 85px;
@@ -23,7 +23,7 @@
                 font-size: 85px;
             }
         }
-        &_content{
+        &__content{
             width: 52% !important;
             padding-top: 3%;
             font-size: 18px;
@@ -42,16 +42,16 @@
                 font-size: 18px;
             }
         }
-        &_img-container{
+        &__img-container{
             width: 80% !important;
             @media(max-width: 800px){
                 padding-top: 5%;
             }
         }
-        &_main-img{
+        &__main-img{
             width: 100% !important;
         }
-        &_download-container{
+        &__download-container{
             @media(max-width: 500px){
                 width: 60% !important;
                 img {
@@ -59,7 +59,7 @@
                 }
             }
         }
-        &_download-img{
+        &__download-img{
             display: inline !important;
         }
     }

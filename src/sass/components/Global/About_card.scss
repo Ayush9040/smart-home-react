@@ -1,29 +1,50 @@
 #{$app}-{
     &about-card{
-        &_img{
+        width: 80% !important;
+        margin: auto;
+        @media(max-width: 800px)
+        {
+            padding-top: 8%;
+        }
+        &__img{
             width: 100% !important;
             position: relative;
             z-index: 999 !important;
         }
-        &_heading{
-            padding-bottom: 2%;
+        &__heading{
+            padding-bottom: 4%;
             font-size: 46px;
+            font-weight: $semi-bold;
             color: #000F37;
+            @media(max-width: 800px)
+            {
+                font-size: 30px !important;
+            }
         }
-        &_content{
-            padding-bottom: 2%;
+        &__content{
+            padding-bottom: 4%;
             font-size: 20px;
             color: #575757;
+            font-weight: $regular;
+            @media(max-width: 800px)
+            {
+                font-size: 16px !important;
+            }
         }
-        &_left{
+        &__left{
             position: relative;
         }
-        &_btn{
+        &__btn{
             padding: 12px 24px;
-            background-color: #000F37;
+            background-color: #FAFAFA;
             border: none;
             font-size: 18px;
-            color: #FAFAFA;
+            color: #000F37;
+            border: 1px solid #000F37;
+            &:hover{
+                background-color: #000F37;
+                color: #FAFAFA;
+            }
         }
     }
 }
@@ -36,12 +57,14 @@
     height: 30%;
     bottom: 30%;
     background-color: $theme-color;
-    transform: translate(45%);
+    right: 0%;
+    left: 0%;
+    margin: auto;
     border-radius: 12px;
   }
 
-  .sh-about_odd-card{
-    @media(min-width: 1000px)
+  .sh-about__odd-card{
+    @media(min-width: 800px)
     {
         flex-direction: row-reverse !important;
         

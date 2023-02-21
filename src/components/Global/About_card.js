@@ -25,17 +25,17 @@ const About_card = () => {
         return (
             <div className='sh-about-card' key={index}>
                 <div className='container'>
-                    <div className={index%2!==0 ? 'sh-about_odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
-                        <div className='col-12 col-md-6 sh-about-card_left'>
-                            <img className='sh-about-card_img' src='/images/Home/about.png' />
+                    <div className={index%2!==0 ? 'sh-about__odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
+                        <div className='col-12 col-md-6 sh-about-card__left'>
+                            <img className='sh-about-card__img' src='/images/Home/about.png' />
                             <div class="element"></div>
                             <span class="pseudo-class"></span>
                         </div>
-                        <div className='col-12 col-md-6 sh-about-card_right'>
-                            <div className='sh-about-card_right_content-wrapper'>
-                                <h3 className='sh-about-card_heading'>{data.aboutHeading}</h3>
-                                <p className='sh-about-card_content'>{data.aboutDesc}htrj</p>
-                                <button className='btn btn-primary sh-about-card_btn'>{data.aboutBtn}</button>
+                        <div className='col-12 col-md-6 sh-about-card__right'>
+                            <div className='sh-about-card_right__content-wrapper'>
+                                <h3 className='sh-about-card__heading'>{data.aboutHeading}</h3>
+                                <p className='sh-about-card__content'>{data.aboutDesc}</p>
+                                <button className='btn btn-primary sh-about-card__btn'>{data.aboutBtn}</button>
                             </div>
                         </div>
                     </div>
