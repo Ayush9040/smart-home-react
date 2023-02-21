@@ -1,6 +1,7 @@
 #{$app}-{
     &about-card{
-        width: 80% !important;
+        width: 90% !important;
+        padding-top: 10%;
         margin: auto;
         @media(max-width: 800px)
         {
@@ -33,6 +34,10 @@
         }
         &__left{
             position: relative;
+            width: 20%;
+            padding-left: 4%;
+            padding-right: 4%;
+            margin: auto;
         }
         &__btn{
             padding: 12px 24px;
@@ -53,9 +58,8 @@
     content: '';
     position: absolute;
     bottom: 0;
-    width: 50%;
-    height: 30%;
-    bottom: 30%;
+    height: 40%;
+    bottom: 10%;
     background-color: $theme-color;
     right: 0%;
     left: 0%;
