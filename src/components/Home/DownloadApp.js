@@ -21,6 +21,18 @@ const DownloadApp = () => {
                     <img className='sh-download__screen' src='/images/Home/download-app.png' />
                 </div>
             </div>
+
+            <div className='row d-flex align-items-center justify-content-center sh-download__subs'>
+                
+                <div className='col-12 col-md-7'>
+                    <h3 className='sh-download__subs-heading'>Subscribe to get updated</h3>
+                    <p className='sh-download__subs-desc'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque .</p>
+                </div>
+
+                <div className='col-12 col-md-5 sh-download__subs-btn-wrapper'>
+                    <button className='btn sh-download__subs-btn'>Get start</button>
+                </div>
+            </div>
         </div>
     </section>
   )

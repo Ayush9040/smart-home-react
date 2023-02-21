@@ -1,133 +1,30 @@
-
-#{$app}- {
-  &footer {
-    background-color: var(--color-ternary);
-
-    &__ {
-      &course {
-        &- {
-          &menu {
-            &- {
-              &new {
-                padding: 1px 3px;
-              }
-            }
-          }
-        }
-      }
-      &enterprise {
-        &- {
-          &content {
-            @media (min-width: 1200px) {
-              padding-top: 150px !important;
-            }
-            @media (min-width: 2200px) {
-              padding-top: 290px !important;
-            }
-          }
-        }
-      }
-      &divider{
-        position: absolute;
-        width: 100%;
-        top: -2px;
-      }
-      &content {
-        padding-top: 60px;
-
-        @media (min-width: 768px) {
-          padding-top: 158px;
-        }
-        @include respond-above(lg){
-          padding-top: 200px;
-        }
-       @media(min-width:2200px){
-        padding-top: 300px;
-       }
-       @media(min-width:3200px){
-        padding-top: 400px;
-       }
-      }
-      &img {
-        &- {
-          &caption {
-            width: 65px;
-          }
-        }
-      }
-      &inner {
-        z-index: 10;
-      }
-      &web{
-        &-{
-          &title{
-            font-size: var(--);
-          }
-        }
-      }
-      &social{
-        &-{
-          &menu{
-            &-{
-              &link{
-                display: inline-block;
-                height: 50px;
-                width:50px;
-                border:3px solid var(--color-light);
-                border-radius:50%;
-                box-sizing: border-box;
-                padding: 10px;
-                @media screen and (max-width: 575px) {
-                  width: 40px;
-                  height: 40px;
-                }
-              }
-            }
-          }
-        }
-      }
-      &copyright{
-        border-top:1px solid #fff ;
-        margin-top: 50px;
-       @include respond-above(md){
-        margin-top: 100px;
-       }
-        padding-top: 50px;
-      }
-
+#{$app}-{
+  &footer{
+    background-color: #FFFFFF;
+    &__about-sec{
+      padding-top: 8%;
+      padding-bottom: 8%;
     }
-  }
-}
-
-// Marketing Footer
-#{$app}- {
-  &mfooter {
-    background: linear-gradient(180deg, #ffffff00 10%, #00262B 0);
-       @include respond-above(ld){
-        background: linear-gradient(180deg, #ffffff00 20%, #00262B 0);
-       }
-    &__{
-      &cta{
-        border-radius: 10px;
-        background-color:#E5F6F9;
-        border:1px solid #D2F8FF;
-        position: relative;
-        &::before{
-          content: "";
-          position: absolute;
-          background-color: #11393C;
-          left: 25px;
-          right: -13px;
-          @include respond-above(lg){
-            right: -25px;
-          }
-          bottom: 0;
-          top: -25px;
-          border-radius: 10px;
-          z-index:-1;
-        }
-      }
-     
+    &__link{
+      padding-bottom: 5%;
+      font-size: 32px;
+      color: #313131;
+    }
+    &__about{
+      padding-bottom: 5%;
+      font-size: 16px;
+      color: #575757;
+    }
+    &__email{
+      background-color: #E7EBEE;
+      border: 1px solid #E7EBEE;
+      padding: 8px 12px;
+      margin-right: 2%;
+    }
+    &__register-btn{
+      color: #011037;
+      font-size: 14px;
+      border: 1px solid #707070;
     }
   }
 }

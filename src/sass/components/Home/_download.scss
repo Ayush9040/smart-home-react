@@ -31,6 +31,42 @@
                     font-size: 18px;
                 }
             }
+            &subs{
+                background-color: $theme-color;
+                padding: 5%;
+                border-radius: 12px;
+                &-heading{
+                    color: #FDFDFF;
+                    font-size: 48px;
+                    margin-bottom: 2%;
+                    @media(max-width: 800px)
+                    {
+                        font-size: 25px;
+                    }
+                }
+                &-desc{
+                    font-size: 18px;
+                    color: #F5F2FF;
+                    @media(max-width: 800px)
+                    {
+                        font-size: 15px;
+                        padding-top: 2%;
+                        padding-bottom: 4%;
+                    }
+                }
+                &-btn-wrapper{
+                    text-align: center;  
+                }
+                &-btn{
+                    color: #FAFAFA;
+                    border: 1px solid #FAFAFA;
+                    padding: 12px 30px;
+                    &:hover{
+                        background-color: #FAFAFA;
+                        color: $theme-color;
+                    }
+                }
+            }
         }
     }
 }
