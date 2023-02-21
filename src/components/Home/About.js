@@ -9,8 +9,6 @@ const About = () => {
                 <div className='d-flex flex-column align-items-center justify-content-center'>
                     <h2 className='sh-about_heading'>About Us</h2>
                     <About_card />
-                    <About_card className='sh-about_different-card' />
-                    <About_card />
                 </div>
             </div>
         </div>

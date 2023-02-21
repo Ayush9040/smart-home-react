@@ -14,8 +14,8 @@ const Hero = () => {
                         <img className='sh-hero_main-img' src='/images/Home/hero-phone.png' />
                     </div>
                     <div className='sh-hero_download-container'>
-                        <img src='/images/Home/app-store.png' />
-                        <img src='/images/Home/download.png' />
+                        <a className="sh-hero_download-img" href='/'><img src='/images/Home/app-store.png' /></a>
+                        <a className="sh-hero_download-img" href='/'><img src='/images/Home/download.png' /></a>
                     </div>
                 </div>
             </div>

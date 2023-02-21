@@ -40,3 +40,11 @@
     border-radius: 12px;
   }
 
+  .sh-about_odd-card{
+    @media(min-width: 1000px)
+    {
+        flex-direction: row-reverse !important;
+        
+    }
+  }
+
