@@ -19,7 +19,11 @@
             color: #000F37;
             @media(max-width: 800px)
             {
-                font-size: 30px !important;
+                font-size: 25px !important;
+            }
+            @media(min-width: 801px) and (max-width: 1200px)
+            {
+                font-size: 25px !important;
             }
         }
         &__content{
@@ -28,6 +32,10 @@
             color: #575757;
             font-weight: $regular;
             @media(max-width: 800px)
+            {
+                font-size: 16px !important;
+            }
+            @media(min-width: 801px) and (max-width: 1200px)
             {
                 font-size: 16px !important;
             }
@@ -51,6 +59,12 @@
                 color: #FAFAFA;
             }
         }
+        &__right{
+            @media(max-width: 800px)
+            {
+                padding-top: 5% !important;
+            }
+        }
     }
 }
 
@@ -68,7 +82,7 @@
   }
 
   .sh-about__odd-card{
-    @media(min-width: 800px)
+    @media(min-width: 700px)
     {
         flex-direction: row-reverse !important;
         
