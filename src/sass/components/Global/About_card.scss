@@ -46,6 +46,14 @@
             padding-left: 4%;
             padding-right: 4%;
             margin: auto;
+            @media(max-width: 800px)
+            {
+                position: relative;
+                width: 80%;
+                padding-left: 7%;
+                padding-right: 7%;
+                margin: auto;
+            }
         }
         &__btn{
             padding: 12px 24px;

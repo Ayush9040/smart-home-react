@@ -1,9 +1,11 @@
 #{$app}-{
     &client{
+        padding-top: 5% !important;
+        padding-bottom: 2% !important;
         @media(max-width: 800px){
             padding-top: 5%;
         }
-        &_heading{
+        &__heading{
             font-size: 85px;
             text-align: center;
             @media(max-width: 800px){
@@ -15,13 +17,14 @@
                 font-size: 85px;
             }
         }
-        &_content{
+        &__content{
             font-size: 18px;
             color: #575757;
             width: 52% !important;
             padding-top: 3%;
             font-size: 18px;
             text-align: center;
+            font-weight: $regular;
             @media(max-width: 800px){
                 width: 100% !important;
                 font-size: 15px;
@@ -31,11 +34,19 @@
                 font-size: 18px;
             }
         }
-        &_img-wrapper{
-            width: 22% !important;
+        &__img-wrapper{
+            width: 24% !important;
+            background-color: #fff !important;
+            padding: 26px 24px;
+            margin: 6px;
+            border-radius: 12px;
         }
-        &_img{
+        &__img{
             width: 100%;
+        }
+        &__img-row{
+            flex-wrap: wrap;
+            background-color: #fcfcfc !important;
         }
     }
 }
