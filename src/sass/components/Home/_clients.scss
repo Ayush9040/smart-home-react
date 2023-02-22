@@ -61,11 +61,16 @@
             // border-radius: 12px;
         }
         &__img{
-            width: 100%;
+            width: 60%;
         }
         &__img-row{
             flex-wrap: wrap;
             background-color: #fcfcfc;
         }
     }
+}
+
+
+.sh-client__main-img-container{
+    padding-top: 5% !important;
 }

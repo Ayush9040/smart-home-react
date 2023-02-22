@@ -35,8 +35,8 @@ const Testimonial = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-12 d-flex flex-column align-items-center justify-content-center'>
-                    <h2 className='sh-testimonial_heading'>Testimonial</h2>
-                    <p className='sh-hero_content'>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon 
+                    <h2 className='sh-testimonial__heading'>Testimonial</h2>
+                    <p className='sh-testimonial__content'>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon 
                         him call mile. An pasture he himself believe ferrars besides cottage.</p>
                 </div>
 
@@ -45,7 +45,7 @@ const Testimonial = () => {
                 <div className="row g-4 sh-Testimonial-card-wrapper">
                     {testimonailsData.map ((data, index) => {
                     return (
-                        <div className="col-12 col-md-6 sh-Testimonial_card" key={index}>
+                        <div className="col-12 col-md-6 sh-Testimonial__card" key={index}>
                         <TestimonialCard
                             authorTestimonails={data.authorDesc}
                             authorAvatar={data.authorAvatar}

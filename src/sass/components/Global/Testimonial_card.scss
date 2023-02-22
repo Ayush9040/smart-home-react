@@ -4,19 +4,26 @@
         border: 1px solid #E7EBEE;
         box-shadow: 1px 1px 10px #E7EBEE;
         padding: 15px 30px;
-        &_desc{
-            color: #5F7285;
-            font-size: 14px;
-            font-weight: 200;
-            padding-bottom: 5%;
-        }
-        &_author-name{
-            font-size: 14px;
-            color: #1B263D;
-        }
-        &_author-designantion{
-            font-size: 12px !important;
-            color: #9C9EA3;
-        }
+        &__{
+            &desc{
+                color: #5F7285;
+                font-size: 14px;
+                font-weight: $medium;
+                padding-bottom: 5%;
+            }
+            &author-{
+                &name{
+                    font-size: 14px;
+                    color: #1B263D;
+                }
+                &designantion{
+                    font-size: 12px !important;
+                    color: #9C9EA3;
+                }
+
+            }
+    
+        }   
+        
     }
 }
