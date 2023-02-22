@@ -5,62 +5,64 @@
         @media(max-width: 800px){
             background: linear-gradient(to bottom, $theme-color 70%, white 30%);
         }
-        &__main-heading{
-            padding-top: 5%;
-            width: 42% !important;
-            font-size: 85px;
-            text-align: center;
-            @media(max-width: 800px){
-                width: 100% !important;
-                font-size: 50px;
-            }
-            @media(min-width: 801px) and (max-width: 1100px){
-                width: 100% !important;
-                font-size: 85px;
-            }
-            @media(min-width: 1101px) and (max-width: 1400px){
-                width: 60% !important;
-                font-size: 85px;
-            }
-        }
-        &__content{
-            width: 52% !important;
-            padding-top: 3%;
-            font-size: 18px;
-            text-align: center;
-            font-weight: $regular;
-            @media(max-width: 800px){
-                width: 100% !important;
-                font-size: 15px;
-            }
-            @media(min-width: 801px) and (max-width: 1100px){
-                width: 70% !important;
-                font-size: 18px;
-            }
-            @media(min-width: 1100px) and (max-width: 1400px){
-                width: 70% !important;
-                font-size: 18px;
-            }
-        }
-        &__img-container{
-            width: 80% !important;
-            @media(max-width: 800px){
+        &__{
+            &main-heading{
                 padding-top: 5%;
-            }
-        }
-        &__main-img{
-            width: 100% !important;
-        }
-        &__download-container{
-            @media(max-width: 500px){
-                width: 60% !important;
-                img {
-                    width: 50% !important;
+                width: 42% !important;
+                font-size: 85px;
+                text-align: center;
+                @media(max-width: 800px){
+                    width: 100% !important;
+                    font-size: 50px;
+                }
+                @media(min-width: 801px) and (max-width: 1100px){
+                    width: 100% !important;
+                    font-size: 85px;
+                }
+                @media(min-width: 1101px) and (max-width: 1400px){
+                    width: 60% !important;
+                    font-size: 85px;
                 }
             }
-        }
-        &__download-img{
-            display: inline !important;
+            &content{
+                width: 52% !important;
+                padding-top: 3%;
+                font-size: 18px;
+                text-align: center;
+                font-weight: $regular;
+                @media(max-width: 800px){
+                    width: 100% !important;
+                    font-size: 15px;
+                }
+                @media(min-width: 801px) and (max-width: 1100px){
+                    width: 70% !important;
+                    font-size: 18px;
+                }
+                @media(min-width: 1100px) and (max-width: 1400px){
+                    width: 70% !important;
+                    font-size: 18px;
+                }
+            }
+            &img-container{
+                width: 80% !important;
+                @media(max-width: 800px){
+                    padding-top: 5%;
+                }
+            }
+            &main-img{
+                width: 100% !important;
+            }
+            &download-container{
+                @media(max-width: 500px){
+                    width: 60% !important;
+                    img {
+                        width: 50% !important;
+                    }
+                }
+            }
+            &download-img{
+                display: inline !important;
+            }
         }
     }
 }

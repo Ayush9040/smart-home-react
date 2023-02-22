@@ -5,11 +5,13 @@
         @media(max-width: 800px){
             padding-top: 10%;
         }
-        &__heading{
-            font-size: 85px;
-            color: #313131;
-            @media(max-width: 800px){
-                font-size: 50px;
+        &__{
+            &heading{
+                font-size: 85px;
+                color: #313131;
+                @media(max-width: 800px){
+                    font-size: 50px;
+                }
             }
         }
     }

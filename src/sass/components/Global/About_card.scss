@@ -5,7 +5,7 @@
         margin: auto;
         @media(max-width: 800px)
         {
-            padding-top: 8%;
+            padding-top: 12%;
         }
         &__img{
             width: 100% !important;
@@ -70,7 +70,7 @@
         &__right{
             @media(max-width: 800px)
             {
-                padding-top: 5% !important;
+                padding-top: 10% !important;
             }
         }
     }

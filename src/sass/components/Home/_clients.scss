@@ -5,6 +5,25 @@
         @media(max-width: 800px){
             padding-top: 5%;
         }
+        &__{
+            &logos{
+                &-{
+                    &outwrap{
+                        background-color: #fff;
+                        border-radius: 4px;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    }
+                    &inwrap{
+                       height:80px;
+                       width:140px;
+                       img{
+                        object-fit: contain;
+                       }
+                    }
+                   
+                }
+            }
+        }
         &__heading{
             font-size: 85px;
             text-align: center;
@@ -35,18 +54,18 @@
             }
         }
         &__img-wrapper{
-            width: 24% !important;
-            background-color: #fff !important;
-            padding: 26px 24px;
-            margin: 6px;
-            border-radius: 12px;
+            // width: 24% !important;
+            // background-color: #fff !important;
+            // padding: 26px 24px;
+            // margin: 6px;
+            // border-radius: 12px;
         }
         &__img{
             width: 100%;
         }
         &__img-row{
             flex-wrap: wrap;
-            background-color: #fcfcfc !important;
+            background-color: #fcfcfc;
         }
     }
 }
