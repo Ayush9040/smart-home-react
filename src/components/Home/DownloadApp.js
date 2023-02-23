@@ -11,8 +11,8 @@ const DownloadApp = () => {
                         <h3 className='sh-download__title'>Download App</h3>
                         <p className='sh-download__caption'>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
                         <div className=''>
-                           <a className='sh-download__link'><img className='sh-download__link-img' src='/images/Home/app-store.png' /></a>
-                           <a className='sh-download__link'><img className='sh-download__link-img' src='/images/Home/download.png' /></a>
+                           <a className='sh-download__link' href='/'><img className='sh-download__link-img' src='/images/Home/app-store.png' /></a>
+                           <a className='sh-download__link' href='/'><img className='sh-download__link-img' src='/images/Home/download.png' /></a>
                         </div>
                     </div>
                 </div>
