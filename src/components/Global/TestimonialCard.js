@@ -17,7 +17,6 @@ const TestimonialCard = ({
             <p className="sh-tcard__author-name">{authorName}</p>
             <p className="sh-tcard__author-designantion">{authorDesignation}</p>
           </div>
-
         </div>
       </div>
     
