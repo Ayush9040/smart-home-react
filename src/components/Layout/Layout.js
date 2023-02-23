@@ -17,7 +17,7 @@ const Layout = () => {
           <About />
           <Clients />
           <Testimonial />
-          <Faq />
+          {/* <Faq /> */}
           <DownloadApp />
         </main>
         <Footer />
