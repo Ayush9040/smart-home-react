@@ -26,8 +26,8 @@ const DownloadApp = () => {
                 <div className='row d-flex align-items-center justify-content-center sh-download__subs'>
                     
                     <div className='col-12 col-md-7'>
-                        <h3 className='sh-download__subs-heading'>Subscribe to get updated</h3>
-                        <p className='sh-download__subs-desc'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque .</p>
+                        <h3 className='sh-download__subs-heading text-center text-sm-start'>Subscribe to get updated</h3>
+                        <p className='sh-download__subs-desc text-center text-sm-start'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque .</p>
                     </div>
 
                     <div className='col-12 col-md-5 sh-download__subs-btn-wrapper'>
