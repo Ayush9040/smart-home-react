@@ -101,9 +101,9 @@ const followusData = [
 const Footer = () => {
   return (
     <section className='sh-footer'>
-      <div className='container sh-footer__container'>
-        <div className='row'>
-          <div className='col-12 col-md-3 d-flex flex-column sh-footer__about-sec'>
+      <div className='container'>
+        <div className='sh-footer__container'>
+          <div className='d-flex flex-column sh-footer__about-sec sh-footer__about-special'>
             <h3 className='sh-footer__cat-link'>smartHome</h3>
             <p className='sh-footer__about'>Automate your entire healthcare hiring, onboarding and compliance with a true technology platform.</p>
             <div className='sh-footer__email-wrapper d-flex justify-content-center align-items-center'>
@@ -111,7 +111,7 @@ const Footer = () => {
               <button className='btn sh-footer__register-btn'>Register</button>
             </div>
           </div>
-          <div className='col-12 col-md-3 d-flex flex-column sh-footer__about-sec'>
+          <div className='d-flex flex-column sh-footer__about-sec'>
             <FooterLinks title="CATEGORIES" linksData={categoriesData}/>
             {/* <h3 className='sh-footer__head'>CATEGORIES</h3>
             <div className='sh-footer__cat-links-wrapper d-flex flex-column'>
@@ -123,7 +123,7 @@ const Footer = () => {
                 <a className='sh-footer__link'>Customer Support</a>
             </div> */}
           </div>
-          <div className='col-12 col-md-3 d-flex flex-column sh-footer__about-sec'>
+          <div className='d-flex flex-column sh-footer__about-sec'>
             <FooterLinks title="ABOUT" linksData={aboutData}/>
             {/* <h3 className='sh-footer__head'>ABOUT</h3>
             <div className='sh-footer__cat-links-wrapper d-flex flex-column'>
@@ -135,7 +135,7 @@ const Footer = () => {
                 <a className='sh-footer__link'>The Teama</a>
             </div> */}
           </div>
-          <div className='col-12 col-md-3 d-flex flex-column sh-footer__about-sec'>
+          <div className='d-flex flex-column sh-footer__about-sec'>
             <FooterLinks title="Follow Us" linksData={followusData}/>
             {/* <h3 className='sh-footer__head'>Follow Us</h3>
             <div className='sh-footer__cat-links-wrapper d-flex flex-column'>

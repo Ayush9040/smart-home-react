@@ -8,17 +8,12 @@ import Testimonial from '../Home/Testimonial';
 import Faq from '../Home/Faq';
 import DownloadApp from '../Home/DownloadApp';
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div>
         <Header />
         <main>
-          <Hero />
-          <About />
-          <Clients />
-          <Testimonial />
-          {/* <Faq /> */}
-          <DownloadApp />
+        {children}
         </main>
         <Footer />
     </div>

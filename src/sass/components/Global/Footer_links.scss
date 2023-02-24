@@ -1,0 +1,22 @@
+#{$app}-{
+    &footer{
+        &__{
+            &head{
+                font-size: 24px;
+                color: #2E2E2E;
+                font-weight: $medium;
+                padding-bottom: 20%;
+            }
+            &link{
+                    color: #575757;
+                    font-size: 18px;
+                    font-weight: $regular;
+                    padding-bottom: 4%;
+            }
+            &about-sec{
+                padding-top: 8%;
+                padding-bottom: 8%;
+              }
+        }
+    }
+}
