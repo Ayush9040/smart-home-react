@@ -42,7 +42,7 @@ const Testimonial = () => {
 
 
 
-                <div className="row g-4 sh-Testimonial-card-wrapper">
+                <div className="row g-2 sh-Testimonial-card-wrapper">
                     {testimonailsData.map ((data, index) => {
                     return (
                         <div className="col-12 col-md-6 sh-Testimonial__card" key={index}>
