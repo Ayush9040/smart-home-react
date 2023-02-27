@@ -1,6 +1,6 @@
 import React from 'react';
 import SmartAccordion from '../Global/Smart_Accordian';
-import New_Accordian from '../Global/New_Accordian';
+import Acc from '../Global/AccordionWithIcon';
 
 const Faq = () => {
   return (
@@ -13,9 +13,8 @@ const Faq = () => {
             </div>
             <div className="row">
 
-            <div className="col-12 sh-faq_acc-container d-flex flex-column align-items-center justify-content-center">
-                {/* <SmartAccordion /> */}
-                <New_Accordian />
+            <div className="col-12 sh-faq_acc-container d-flex flex-column justify-content-center">
+                <SmartAccordion />
             </div>
         </div>
         </div>

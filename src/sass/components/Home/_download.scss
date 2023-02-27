@@ -1,6 +1,10 @@
 #{$app}-{
     &download{
         padding-top: 8%;
+        @media(max-width: 800px)
+        {
+            padding-top: 10%;
+        }
         &__{
             &link{
                 @media(max-width: 800px)

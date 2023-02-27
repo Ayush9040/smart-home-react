@@ -2,12 +2,49 @@
     &_accordian{
         padding-bottom: 2%;
     }
+    &faq{
+        &_{
+            &accordian{
+                &-{
+                    &question{
+                        & .accordion-button::after{
+                            background-image: url('../../../../public/images/Home/exact-plus.svg') !important;
+                            // width: 0 !important;
+                        }
+                        & .accordion-button:not(.collapsed)::after {
+                            // background-image: url('../../../../public/images/Home/true.png') !important;
+                        }
+                        &-data{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
 }
+
+.accordion-button::after {
+    // background-image: url('../../../../public/images/Home/true.png') !important;
+    position: absolute;
+    left: 8px;
+}
+
+
+
 
 .accordion-item{
     padding-bottom: 5% !important;
 }
 
 .accordion-body{
-    padding: 3% 5% !important;
+    text-align: left;
+    padding: 2% 2% !important;
+    // width: 50%;
+    // margin: 0 auto;
+}
+
+.accordion-button:not(.collapsed){
+    color: #313131;
 }

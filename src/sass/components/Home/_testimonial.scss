@@ -10,10 +10,10 @@
         }
     }
     &testimonial{
-        padding-top: 6%;
-        padding-bottom: 4%;
+        padding-top: 8%;
+        // padding-bottom: 4%;
         @media(max-width: 800px){
-            padding-top: 8% !important;
+            padding-top: 10% !important;
          }
         &__{
             &heading{

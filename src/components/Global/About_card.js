@@ -28,8 +28,8 @@ const About_card = () => {
                     <div className={index%2!==0 ? 'sh-about__odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
                         <div className='col-12 col-md-6 sh-about-card__left'>
                             <img className='sh-about-card__img' src='/images/Home/about.png' />
-                            <div class="element"></div>
-                            <span class="pseudo-class"></span>
+                            <div className="element"></div>
+                            <span className="pseudo-class"></span>
                         </div>
                         <div className='col-12 col-md-6 sh-about-card__right'>
                             <div className='sh-about-card_right__content-wrapper'>

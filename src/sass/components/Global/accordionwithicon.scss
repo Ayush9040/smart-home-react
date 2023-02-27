@@ -1,0 +1,24 @@
+#{$app}-{
+    &accordian{
+        width: 500px;
+        &__{
+            &item{
+                margin-bottom: 5px;
+                padding: 10px 20px;
+            }
+            &question{
+                color: #313131;
+                font-weight: $medium;
+                font-size: 18px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &answer{
+                color: #575757;
+                font-size: 18px;
+                font-weight: $medium;
+            }
+        }
+    }
+}
