@@ -1,12 +1,2 @@
-// @import "./hero";
-@import "./Home/hero";
-@import "./Home/about";
-@import "./Global/About_card.scss";
-@import "./Home/clients";
-@import "./Home/testimonial";
-@import "./Global/Testimonial_card.scss";
-@import "./Home/faq",'./Home/download';
-@import "./Global/Footer_links.scss";
-@import "./Global/Smart_Accordian.scss";
-// @import "./Global/accordionwithicon.scss";
-// @import './Home/download'
+
+@import "./Global/_global", './Home/home';

@@ -1,47 +1,39 @@
-import React, { useState } from 'react'
-import {BiMenuAltRight} from 'react-icons/bi';
-import {AiOutLineClose} from "react-icons/ai";
+import React from 'react'
+import { useRef } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
 
-  const [header, setHeader] = useState(false);
+    const navRef = useRef();
+
+    const showNav = () => {
+        navRef.current.classList.toggle("sh-header__responsive_nav");
+    }
 
   return (
-    <>
-        <header className='sh-header'>
-            <div className='container'>
-                <div className='sh-header__content position-relative'>
-                    <nav className='sh-header__content-nav'>
-                        {header && 
-                          <ul className={header===false ? 'd-flex gap-2 py-4 sh-header__content-nav__list': 'd-flex gap-2 py-4 sh-header__content-nav__res'}>
-                            <li>
-                                <a href='/'>Home</a>
-                            </li>
-                            <li>
-                                <a href='/'>About</a>
-                            </li>
-                            <li>
-                                <a href='/'>Testimonials</a>
-                            </li>
-                            <li>
-                                <a href='/'>Contact</a>
-                            </li>
-                        </ul>  
-                        }
+    <section className='sh-header'>
+        <div className='sh-header__container'>
+                <header className='sh-header__wrapper'>  
+                    <nav className='sh-header__nav sh-header__nav-links-wrapper' ref={navRef}>
+                        <a className='sh-header__nav-link' href='/'>Home</a>
+                        <a className='sh-header__nav-link' href='/'>About</a>
+                        <a className='sh-header__nav-link' href='/'>Testimonial</a>
+                        <a className='sh-header__nav-link' href='/'>Contact</a>
+                        <button className='sh-header__nav-btn sh-header__nav-close-btn' onClick={showNav}>
+                            <FaTimes />
+                        </button>
                     </nav>
                     
-                    <button type='button' className='bg-transparent border px-5 py-2 position-absolute sh-header__btn-ham' onClick={()=> setHeader(prev=>!prev)}><BiMenuAltRight className='sh-header__btn-icon' /></button>
-                    {/* <div className='sh-header__btn'>
-                            <button className='sh-header__btn-login'>Login</button>
-                            <button className='sh-header__btn-signup'>Sign up</button>
-                        </div>
-                    <div className='sh-header__content-toggle'>
-                        <BiMenuAltRight />
-                    </div> */}
-                </div>
-            </div>
-        </header>
-        </>
+                    <button className='sh-header__nav-btn' onClick={showNav}>
+                        <FaBars />
+                    </button>
+                    <div>
+                        <a className='sh-header__nav-login' href='/'>Login</a>
+                        <button><a className='sh-header__nav-signup' href='/'>Sign up</a></button>
+                    </div>
+            </header>
+        </div>
+    </section>
   )
 }
 

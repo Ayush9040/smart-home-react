@@ -1,6 +1,6 @@
 import React from 'react'
 // import Header from './Header';
-import Header1 from './Header1';
+import Header from './Header';
 import Footer from './Footer';
 // import Hero from '../Home/Hero';
 // import About from '../Home/About';
@@ -13,7 +13,7 @@ const Layout = ({children}) => {
   return (
     <div>
         {/* <Header /> */}
-        <Header1 />
+        <Header />
         <main>
         {children}
         </main>
