@@ -3,14 +3,33 @@
         padding-bottom: 2%;
     }
     &faq{
-        &_{
+        &__{
             &accordian{
+                & .accordion-item{
+                    // padding-bottom: 5% !important;
+                    margin: 3% !important;
+                    box-shadow: 1px 1px 10px #E7EBEE;
+                    border-radius: 12px !important;
+                    text-align: justify;
+                }
                 &-{
                     &question{
                         & .accordion-button::after{
                             background-image: url('../../../../public/images/Home/exact-plus.svg');
                             // background-color: #FAFAFA;
                             // width: 0 !important;
+                            position: absolute;
+                            left: 40px;
+                        }
+                        & .accordion-button:not(.collapsed){
+                            color: #313131;
+                            background-color: #fff;
+                            box-shadow: none;
+                        }
+                        & .accordion-button{
+                            background-color: #FAFAFA;
+                            padding: 5% 10%;
+                            border-radius: 12px !important;
                         }
                         & .accordion-button:not(.collapsed)::after {
                             background-image: url('../../../../public/images/Home/new-minus.png') ;
@@ -33,6 +52,22 @@
                             }
                         }
                     }
+                    &answer{
+                        padding: 0% 11.5% !important;
+                        text-align: justify;
+                        border-radius: 12px;
+                        margin: 2%;
+                        color: #313131;
+                        font-size: 18px;
+                        font-weight: $light;
+                        opacity: 0.8;
+                        padding-bottom: 3% !important;
+                        @media(max-width: 800px)
+                        {
+                            padding: 0% 19% !important;
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
             
@@ -40,51 +75,3 @@
     }
 }
 
-.accordion-button::after {
-    // background-image: url('../../../../public/images/Home/true.png') !important;
-    position: absolute;
-    left: 40px;
-}
-
-
-
-
-.accordion-item{
-    // padding-bottom: 5% !important;
-    margin: 3% !important;
-    box-shadow: 1px 1px 10px #E7EBEE;
-    border-radius: 12px !important;
-    text-align: justify;
-}
-
-.accordion-body{
-    // text-align: left;
-    padding: 0% 11.5% !important;
-    text-align: justify;
-    border-radius: 12px;
-    margin: 2%;
-    color: #313131;
-    font-size: 18px;
-    font-weight: $light;
-    opacity: 0.8;
-    padding-bottom: 3% !important;
-    @media(max-width: 800px)
-    {
-        padding: 0% 19% !important;
-        font-size: 14px;
-    }
-}
-
-.accordion-button:not(.collapsed){
-    color: #313131;
-    background-color: #fff;
-    box-shadow: none;
-}
-
-.accordion-button{
-    background-color: #FAFAFA;
-    padding: 5% 10%;
-    border-radius: 12px !important;
-    // border: 1px solid #707070;
-
-}

@@ -25,16 +25,14 @@ const accordionData = [
 ]
 const SmartAccordion = () => {
     return(
-        <Accordion className='sh-faq_accordian' defaultActiveKey={0} flush>
+        <Accordion className='sh-faq__accordian' defaultActiveKey={0} flush>
       {
         accordionData.map((data,index)=>{
           return(
             <Accordion.Item eventKey={index} key={index}>
-            <Accordion.Header className="sh-faq_accordian-question"><p className="sh-faq_accordian-question-data">{data.question}</p></Accordion.Header>
-            <Accordion.Body>
-            {
-              data.answer
-            }
+            <Accordion.Header className="sh-faq__accordian-question"><p className="sh-faq__accordian-question-data">{data.question}</p></Accordion.Header>
+            <Accordion.Body className="sh-faq__accordian-answer">
+              <p className="sh-faq__accordian-answer-data">{data.answer}</p>
             </Accordion.Body>
           </Accordion.Item>
           )

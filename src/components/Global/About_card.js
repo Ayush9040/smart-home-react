@@ -25,10 +25,10 @@ const About_card = () => {
         return (
             <div className='sh-about-card' key={index}>
                 <div className='container'>
-                    <div className={index%2!==0 ? 'sh-about__odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
+                    <div className={index%2!==0 ? 'sh-about-card__odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
                         <div className='col-12 col-md-6 sh-about-card__left'>
                             <img className='sh-about-card__img' src='/images/Home/about.png' />
-                            <div className="element"></div>
+                            <div className="sh-about-card__element"></div>
                             <span className="pseudo-class"></span>
                         </div>
                         <div className='col-12 col-md-6 sh-about-card__right'>

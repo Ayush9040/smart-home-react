@@ -7,7 +7,7 @@ const Header = () => {
     const navRef = useRef();
 
     const showNav = () => {
-        navRef.current.classList.toggle("sh-header__responsive_nav");
+        navRef.current.classList.toggle("sh-header__responsive-nav");
     }
 
   return (

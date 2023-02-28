@@ -7,94 +7,95 @@
         {
             padding-top: 12%;
         }
-        &__img{
-            width: 100% !important;
-            position: relative;
-            z-index: 999 !important;
-        }
-        &__heading{
-            padding-bottom: 4%;
-            font-size: 46px;
-            font-weight: $semi-bold;
-            color: #000F37;
-            @media(max-width: 800px)
-            {
-                font-size: 25px !important;
-            }
-            @media(min-width: 801px) and (max-width: 1200px)
-            {
-                font-size: 25px !important;
-            }
-        }
-        &__content{
-            padding-bottom: 4%;
-            font-size: 20px;
-            color: #575757;
-            font-weight: $regular;
-            @media(max-width: 800px)
-            {
-                font-size: 16px !important;
-            }
-            @media(min-width: 801px) and (max-width: 1200px)
-            {
-                font-size: 16px !important;
-            }
-        }
-        &__left{
-            position: relative;
-            width: 28%;
-            padding-left: 4%;
-            padding-right: 4%;
-            margin: auto;
-            @media(max-width: 800px)
-            {
+        &__{
+            &img{
+                width: 100% !important;
                 position: relative;
-                width: 80%;
-                padding-left: 7%;
-                padding-right: 7%;
+                z-index: 100 !important;
+            }
+            &heading{
+                padding-bottom: 4%;
+                font-size: 46px;
+                font-weight: $semi-bold;
+                color: #000F37;
+                @media(max-width: 800px)
+                {
+                    font-size: 25px !important;
+                }
+                @media(min-width: 801px) and (max-width: 1200px)
+                {
+                    font-size: 25px !important;
+                }
+            }
+            &content{
+                padding-bottom: 4%;
+                font-size: 20px;
+                color: #575757;
+                font-weight: $regular;
+                @media(max-width: 800px)
+                {
+                    font-size: 16px !important;
+                }
+                @media(min-width: 801px) and (max-width: 1200px)
+                {
+                    font-size: 16px !important;
+                }
+            }
+            &left{
+                position: relative;
+                width: 28%;
+                padding-left: 4%;
+                padding-right: 4%;
                 margin: auto;
+                @media(max-width: 800px)
+                {
+                    position: relative;
+                    width: 80%;
+                    padding-left: 7%;
+                    padding-right: 7%;
+                    margin: auto;
+                }
             }
-        }
-        &__btn{
-            padding: 12px 24px;
-            background-color: #FAFAFA;
-            border: none;
-            font-size: 18px;
-            color: #000F37;
-            border: 1px solid #000F37;
-            &:hover{
-                background-color: #000F37;
-                color: #FAFAFA;
+            &btn{
+                padding: 12px 24px;
+                background-color: #FAFAFA;
+                border: none;
+                font-size: 18px;
+                color: #000F37;
+                border: 1px solid #000F37;
+                &:hover{
+                    background-color: #000F37;
+                    color: #FAFAFA;
+                }
             }
-        }
-        &__right{
-            @media(max-width: 800px)
-            {
-                padding-top: 10% !important;
+            &right{
+                @media(max-width: 800px)
+                {
+                    padding-top: 10% !important;
+                }
+            }
+            &odd-card{
+                @media(min-width: 700px)
+                {
+                    flex-direction: row-reverse !important;
+                    
+                }
+            }
+            &element::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 40%;
+                bottom: 10%;
+                background-color: $theme-color;
+                right: 0%;
+                left: 0%;
+                margin: auto;
+                border-radius: 12px;
             }
         }
     }
 }
 
-.element::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 40%;
-    bottom: 10%;
-    background-color: $theme-color;
-    right: 0%;
-    left: 0%;
-    margin: auto;
-    border-radius: 12px;
-  }
-
-  .sh-about__odd-card{
-    @media(min-width: 700px)
-    {
-        flex-direction: row-reverse !important;
-        
-    }
-  }
 
 

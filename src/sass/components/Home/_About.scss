@@ -1,9 +1,8 @@
 #{$app}-{
     &about{
         padding-top: 8%;
-        // padding-bottom: 5%;
         @media(max-width: 800px){
-            padding-top: 10%;
+            padding-top: 12%;
         }
         &__{
             &heading{

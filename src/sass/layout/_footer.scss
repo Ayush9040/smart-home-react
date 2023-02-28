@@ -6,53 +6,43 @@
       margin-top: 10%;
     }
    
-    &__about{
-      padding-bottom: 10%;
-      font-size: 16px;
-      padding-top: 4%;
-      color: #575757;
-    }
-    &__email{
-      background-color: #E7EBEE;
-      border: 1px solid #E7EBEE;
-      padding: 8px 12px;
-      margin-right: 2%;
-    }
-    &__register-btn{
-      color: #011037;
-      font-size: 14px;
-      border: 1px solid #707070;
-    }
-    // &__head{
-    //   font-size: 24px;
-    //   color: #2E2E2E;
-    //   font-weight: 200;
-    //   padding-bottom: 10%;
-    // }
-    // &__link{
-    //   color: #2E2E2E;
-    //   font-size: 18px;
-    //   font-weight: 100;
-    //   padding-bottom: 3%;
-    // }
-    &__cat-link{
-      font-size: 32px;
-      color: #313131;
-    }
-    &__container{
-      display: flex;
-      justify-content: space-between;
-      @media(max-width: 800px)
-      {
-        flex-direction: column;
+    &__{
+      &about{
+        padding-bottom: 10%;
+        font-size: 16px;
+        padding-top: 4%;
+        color: #575757;
       }
-    }
-    &__about-special{
-      width: 30%;
-      padding-right: 4%;
-      @media(max-width: 800px)
-      {
-        width: 100%;
+      &email{
+        background-color: #E7EBEE;
+        border: 1px solid #E7EBEE;
+        padding: 8px 12px;
+        margin-right: 2%;
+      }
+      &register-btn{
+        color: #011037;
+        font-size: 14px;
+        border: 1px solid #707070;
+      }
+      &cat-link{
+        font-size: 32px;
+        color: #313131;
+      }
+      &container{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 800px)
+        {
+          flex-direction: column;
+        }
+      }
+      &about-special{
+        width: 30%;
+        padding-right: 4%;
+        @media(max-width: 800px)
+        {
+          width: 100%;
+        }
       }
     }
   }

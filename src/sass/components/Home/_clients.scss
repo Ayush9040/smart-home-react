@@ -3,7 +3,7 @@
         padding-top: 8%;
         // padding-bottom: 2% !important;
         @media(max-width: 800px){
-            padding-top: 10%;
+            padding-top: 12%;
         }
         &__{
             &logos{
@@ -52,12 +52,8 @@
                     font-size: 18px;
                 }
             }
-            &img-wrapper{
-                // width: 24% !important;
-                // background-color: #fff !important;
-                // padding: 26px 24px;
-                // margin: 6px;
-                // border-radius: 12px;
+            &main-img-container{
+                padding-top: 5% !important;
             }
             &img{
                 width: 60%;
@@ -69,8 +65,4 @@
         }
         
     }
-}
-
-.sh-client__main-img-container{
-    padding-top: 5% !important;
 }

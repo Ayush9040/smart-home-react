@@ -3,7 +3,7 @@
         padding-top: 8%;
         @media(max-width: 800px)
         {
-            padding-top: 10%;
+            padding-top: 12%;
         }
         &__{
             &link{
@@ -76,42 +76,44 @@
                     display: none;
                     padding: 24px 0px; 
                 }
-                &-heading{
-                    color: #FDFDFF;
-                    font-size: 48px;
-                    margin-bottom: 2%;
-                    @media(max-width: 800px)
-                    {
-                        font-size: 20px;
+                &-{
+                    &heading{
+                        color: #FDFDFF;
+                        font-size: 48px;
+                        margin-bottom: 2%;
+                        @media(max-width: 800px)
+                        {
+                            font-size: 20px;
+                        }
                     }
-                }
-                &-desc{
-                    font-size: 18px;
-                    color: #F5F2FF;
-                    padding-right: 8%;
-                    @media(max-width: 800px)
-                    {
-                        font-size: 14px;
-                        padding-top: 2%;
-                        padding-bottom: 7%;
-                        padding-right: 0%;
-                        text-align: center;
+                    &desc{
+                        font-size: 18px;
+                        color: #F5F2FF;
+                        padding-right: 8%;
+                        @media(max-width: 800px)
+                        {
+                            font-size: 14px;
+                            padding-top: 2%;
+                            padding-bottom: 7%;
+                            padding-right: 0%;
+                            text-align: center;
+                        }
                     }
-                }
-                &-btn-wrapper{
-                    text-align: end; 
-                    @media(max-width: 800px)
-                    {
-                        text-align: center;
-                    } 
-                }
-                &-btn{
-                    color: #FAFAFA;
-                    border: 1px solid #FAFAFA;
-                    padding: 14px 50px;
-                    &:hover{
-                        background-color: #FAFAFA;
-                        color: $theme-color;
+                    &btn-wrapper{
+                        text-align: end; 
+                        @media(max-width: 800px)
+                        {
+                            text-align: center;
+                        } 
+                    }
+                    &btn{
+                        color: #FAFAFA;
+                        border: 1px solid #FAFAFA;
+                        padding: 14px 50px;
+                        &:hover{
+                            background-color: #FAFAFA;
+                            color: $theme-color;
+                        }
                     }
                 }
                 
