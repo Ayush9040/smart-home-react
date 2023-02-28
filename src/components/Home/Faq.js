@@ -11,7 +11,7 @@ const Faq = () => {
                     <h2 className='sh-faq_heading'>FAQ's</h2>
                 </div>
             </div>
-            <div className="row">
+            <div className="row sh-faq__wrapper">
 
             <div className="col-12 sh-faq_acc-container d-flex flex-column justify-content-center">
                 <SmartAccordion />

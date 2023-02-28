@@ -7,7 +7,7 @@
         &_heading{
             font-size: 85px;
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 5%;
             @media(max-width: 800px){
                 width: 100% !important;
                 font-size: 50px;
@@ -22,5 +22,15 @@
             // padding: 3% 8%;
             text-align: center;
         }
+    }
+}
+
+.sh-faq__wrapper{
+    width: 60%;
+    margin: auto;
+    @media(max-width:800px)
+    {
+        width: 100%;
+        margin: auto;
     }
 }

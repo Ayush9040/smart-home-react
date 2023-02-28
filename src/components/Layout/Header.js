@@ -13,7 +13,7 @@ const Header = () => {
                 <div className='sh-header__content position-relative'>
                     <nav className='sh-header__content-nav'>
                         {header && 
-                          <ul className='d-flex gap-2 py-4'>
+                          <ul className={header===false ? 'd-flex gap-2 py-4 sh-header__content-nav__list': 'd-flex gap-2 py-4 sh-header__content-nav__res'}>
                             <li>
                                 <a href='/'>Home</a>
                             </li>
@@ -30,7 +30,7 @@ const Header = () => {
                         }
                     </nav>
                     
-                    <button type='button' className='bg-transparent border px-5 py-2 position-absolute sh-header__btn-ham' onClick={()=> setHeader(prev=>!prev)}>{header ? "Close" : "Open"}</button>
+                    <button type='button' className='bg-transparent border px-5 py-2 position-absolute sh-header__btn-ham' onClick={()=> setHeader(prev=>!prev)}><BiMenuAltRight className='sh-header__btn-icon' /></button>
                     {/* <div className='sh-header__btn'>
                             <button className='sh-header__btn-login'>Login</button>
                             <button className='sh-header__btn-signup'>Sign up</button>
