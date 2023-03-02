@@ -94,6 +94,9 @@
                     font-size: 18px;
                     font-weight: $medium;
                     padding: 12px 24px;
+                    &:hover{
+                        color: $theme-color;
+                    }
                 }
             }
             &responsive-nav{
