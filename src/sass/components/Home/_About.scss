@@ -1,16 +1,16 @@
 #{$app}-{
     &about{
         padding-top: 8%;
-        @media(max-width: 800px){
+        @media(max-width: 768px){
             padding-top: 12%;
         }
         &__{
             &heading{
-                font-size: 85px;
+                // font-size: 85px;
                 color: #313131;
-                @media(max-width: 800px){
-                    font-size: 50px;
-                }
+                // @media(max-width: 768px){
+                //     font-size: 50px;
+                // }
             }
         }
     }

@@ -100,10 +100,10 @@ const followusData = [
 
 const Footer = () => {
   return (
-    <section className='sh-footer'>
+    <section className='sh-footer' id='sh-footer'>
       <div className='container'>
         <div className='sh-footer__container'>
-          <div className='d-flex flex-column sh-footer__about-sec sh-footer__about-special'>
+          <div className='d-flex flex-column sh-footer__about-sec sh-footer__about-contact'>
             <h3 className='sh-footer__cat-link'>smartHome</h3>
             <p className='sh-footer__about'>Automate your entire healthcare hiring, onboarding and compliance with a true technology platform.</p>
             <div className='sh-footer__email-wrapper d-flex justify-content-center align-items-center'>

@@ -3,11 +3,11 @@ import About_card from '../Global/About_card';
 
 const About = () => {
   return (
-    <section className='sh-about'>
+    <section className='sh-about' id='sh-about'>
         <div className='container sh-about__wrapper'>
             <div className='row'>
                 <div className='d-flex flex-column align-items-center justify-content-center'>
-                    <h2 className='sh-about__heading'>About Us</h2>
+                    <h2 className='sh-about__heading sh-main-heading'>About Us</h2>
                     <About_card />
                 </div>
             </div>

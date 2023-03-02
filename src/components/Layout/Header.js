@@ -16,9 +16,9 @@ const Header = () => {
                 <header className='sh-header__wrapper'>  
                     <nav className='sh-header__nav sh-header__nav-links-wrapper' ref={navRef}>
                         <a className='sh-header__nav-link' href='/'>Home</a>
-                        <a className='sh-header__nav-link' href='/'>About</a>
-                        <a className='sh-header__nav-link' href='/'>Testimonial</a>
-                        <a className='sh-header__nav-link' href='/'>Contact</a>
+                        <a className='sh-header__nav-link' href='#sh-about'>About</a>
+                        <a className='sh-header__nav-link' href='#sh-testimonial'>Testimonial</a>
+                        <a className='sh-header__nav-link' href='#sh-footer'>Contact</a>
                         <button className='sh-header__nav-btn sh-header__nav-close-btn' onClick={showNav}>
                             <FaTimes />
                         </button>

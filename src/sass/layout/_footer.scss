@@ -1,7 +1,7 @@
 #{$app}-{
   &footer{
     background-color: #FFFFFF;
-    @media(max-width: 800px)
+    @media(max-width: 768px)
     {
       margin-top: 10%;
     }
@@ -31,19 +31,19 @@
       &container{
         display: flex;
         justify-content: space-between;
-        @media(max-width: 800px)
+        @media(max-width: 768px)
         {
           flex-direction: column;
         }
       }
-      &about-special{
+      &about-contact{
         width: 30%;
         padding-right: 4%;
-        @media(max-width: 800px)
+        @media(max-width: 768px)
         {
           width: 100%;
         }
-        @media(min-width: 801px) and (max-width: 1100px)
+        @media(min-width: 769px) and (max-width: 1200px)
         {
           display: none !important;
         }

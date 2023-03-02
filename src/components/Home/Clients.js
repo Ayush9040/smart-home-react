@@ -34,7 +34,7 @@ const Clients = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-12 d-flex flex-column align-items-center justify-content-center'>
-                    <h2 className='sh-client__heading'>Our Clients</h2>
+                    <h2 className='sh-client__heading sh-main-heading'>Our Clients</h2>
                     <p className='sh-client__content'>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
                     <div className='sh-client__main-img-container d-flex flex-column pt-4'>
                         <div className='row g-4'>

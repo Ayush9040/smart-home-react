@@ -31,11 +31,11 @@ const testimonailsData = [
 
 const Testimonial = () => {
   return (
-    <section className='sh-testimonial'>
+    <section className='sh-testimonial' id='sh-testimonial'>
         <div className='container'>
             <div className='row'>
                 <div className='col-12 d-flex flex-column align-items-center justify-content-center'>
-                    <h2 className='sh-testimonial__heading'>Testimonial</h2>
+                    <h2 className='sh-testimonial__heading sh-main-heading'>Testimonial</h2>
                     <p className='sh-testimonial__content'>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon 
                         him call mile. An pasture he himself believe ferrars besides cottage.</p>
                 </div>

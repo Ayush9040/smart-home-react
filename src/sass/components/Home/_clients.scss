@@ -2,7 +2,7 @@
     &client{
         padding-top: 8%;
         // padding-bottom: 2% !important;
-        @media(max-width: 800px){
+        @media(max-width: 768px){
             padding-top: 12%;
         }
         &__{
@@ -24,13 +24,13 @@
                 }
             }
             &heading{
-                font-size: 85px;
+                // font-size: 85px;
                 text-align: center;
-                @media(max-width: 800px){
+                @media(max-width: 768px){
                     width: 100% !important;
-                    font-size: 50px;
+                    // font-size: 50px;
                 }
-                @media(min-width: 801px) and (max-width: 1100px){
+                @media(min-width: 769px) and (max-width: 1200px){
                     width: 100% !important;
                     font-size: 85px;
                 }
@@ -43,11 +43,11 @@
                 font-size: 18px;
                 text-align: center;
                 font-weight: $regular;
-                @media(max-width: 800px){
+                @media(max-width: 768px){
                     width: 100% !important;
                     font-size: 15px;
                 }
-                @media(min-width: 801px) and (max-width: 1100px){
+                @media(min-width: 769px) and (max-width: 1200px){
                     width: 100% !important;
                     font-size: 18px;
                 }

@@ -8,12 +8,12 @@ const Faq = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-12 d-flex flex-column align-items-center justify-content-center'>
-                    <h2 className='sh-faq__heading'>FAQ's</h2>
+                    <h2 className='sh-faq__heading sh-main-heading'>FAQ's</h2>
                 </div>
             </div>
             <div className="row sh-faq__accordian-wrapper">
 
-            <div className="col-12 sh-faq__acc-container d-flex flex-column justify-content-center">
+            <div className="col-12 sh-faq__acc-inner-wrapper d-flex flex-column justify-content-center">
                 <SmartAccordion />
             </div>
         </div>
