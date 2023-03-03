@@ -103,7 +103,7 @@ const Footer = () => {
     <section className='sh-footer' id='sh-footer'>
       <div className='container'>
         <div className='sh-footer__container'>
-          <div className='d-flex flex-column sh-footer__about-sec sh-footer__about-contact'>
+          <div className='d-flex flex-column sh-footer__about-sec sh-footer__about-contact co-md-12'>
             <h3 className='sh-footer__cat-link'>smartHome</h3>
             <p className='sh-footer__about'>Automate your entire healthcare hiring, onboarding and compliance with a true technology platform.</p>
             <div className='sh-footer__email-wrapper d-flex justify-content-center align-items-center'>
