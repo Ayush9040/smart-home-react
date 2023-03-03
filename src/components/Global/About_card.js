@@ -1,8 +1,24 @@
 import React from 'react'
 import gsap from 'gsap';
-import { TweenLite, TimelineMax, Power3, Linear, Back, Sine } from 'gsap';
-import { useEffect, useRef, useLayoutEffect } from 'react';
+// import { TweenLite, TimelineMax, Power3, Linear, Back, Sine } from 'gsap';
+import { useRef, useLayoutEffect } from 'react';
 
+const image = document.querySelector(".parallax img");
+// const speed = parallax.getAttribute("data-speed");
+// console.log(speed);
+
+// // On scroll
+ window.addEventListener("scroll", () => {
+//   // Calculate the distance scrolled from top
+   const distance = window.pageYOffset;
+
+//   // Calculate the transform value for the parallax effect
+   const transform = `translate3d(0, ${distance * 0.5}px, 0)`;
+
+//   // Apply the transform to the element
+//   parallax.style.transform = transform;
+  gsap.to(image, { duration: 0.5, y: distance * 0.5 });
+ });
 
 
 const AboutData = [
@@ -30,6 +46,53 @@ const About_card = () => {
   // useEffect(() => {
   //   TweenMax.from(image, 0.8, {opacity: 0, x: 40, ease: Power3.easeOut})
   // }, [])
+  // const app = useRef();
+  // const circle = useRef();
+  
+  // useLayoutEffect(() => {
+  //   let aboutImg = gsap.utils.toArray(".box");
+  //   var tl = gsap.timeline({repeat: -1,yoyo:true});
+    // tl.to(".box", {y: -100, y:0, duration: 1});
+    // tl.to(".box", {y: 0, x: 0, duration: 1});
+    // tl.to(".box", {opacity: 0, duration: 1});
+
+    // aboutImg.forEach(box => {
+    //   tl.to(box, {
+    //     x: function(){ return getRand(-20,20) },
+    //     y: function(){ return getRand(-40,40) },
+    //     // transformOrigin:'50% 50%',
+    //     ease:"sine.inOut",
+    //     //  y: -20,
+    //     //  y: 20,
+    //     // //  x:300,
+    //     scrollTrigger: {
+    //       trigger: box,
+    //       y: -20,
+    //       y: 20,
+    //       scrub: true
+    //     }
+    //   })
+
+    //   function getRand(min,max){
+    //     return Math.random() * (max - min) + min;
+    //   }
+    // })
+
+    // aboutImg.forEach((item, index) => {
+    //   let ctx = gsap.context(() => {
+    //     // use scoped selectors
+    //     gsap.to(".box", { rotation: 360, y: -100, y: 0 });      
+    //   }, app);
+
+    //   ctx.to(item, {
+    //     rotation: 360, y: -100, y: 0 
+    //   })
+    // })
+    
+    
+    // return () => ctx.revert();
+  // }, []);
+
   
   return (
     AboutData.map((data, index) => {
@@ -38,7 +101,11 @@ const About_card = () => {
                 <div className='container'>
                     <div className={index%2!==0 ? 'sh-about-card__odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
                         <div className='col-12 col-md-6 sh-about-card__left'>
-                            <img className='sh-about-card__img' src='/images/Home/about.png' />
+                          
+                        <div className="parallax">
+                          <img className='sh-about-card__img box' src='/images/Home/about.png' alt='' />
+                        </div>
+                            
                             <div className="sh-about-card__element"></div>
                             <span className="pseudo-class"></span>
                         </div>
