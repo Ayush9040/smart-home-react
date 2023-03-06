@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-// import { TweenLite, TimelineMax, Power3, Linear, Back, Sine } from 'gsap';
-import { useRef, useLayoutEffect } from 'react';
 
 
 
@@ -23,44 +22,49 @@ const AboutData = [
       }
   ];
 
-const About_card = () => {
+const About_card = (props) => {
+
+
+  const a = props.anim;
+
+  const aboutImg = gsap.utils.toArray(".fadeIn");
 
   // let image = useRef(null);
 
   // useEffect(() => {
   //   TweenMax.from(image, 0.8, {opacity: 0, x: 40, ease: Power3.easeOut})
   // }, [])
-  const app = useRef();
-  const circle = useRef();
+  // const app = useRef();
+  // // const circle = useRef();
   
-  useLayoutEffect(() => {
-    let aboutImg = gsap.utils.toArray(".box");
-    var tl = gsap.timeline({repeat: -1,yoyo:true});
+  // useLayoutEffect(() => {
+  //   let aboutImg = gsap.utils.toArray(".box");
+  //   var tl = gsap.timeline({repeat: -1,yoyo:true});
     // tl.to(".box", {y: -100, y:0, duration: 1});
     // tl.to(".box", {y: 0, x: 0, duration: 1});
     // tl.to(".box", {opacity: 0, duration: 1});
 
-    aboutImg.forEach(box => {
-      tl.to(box, {
-        x: function(){ return getRand(-20,20) },
-        y: function(){ return getRand(-40,40) },
-        // transformOrigin:'50% 50%',
-        ease:"sine.inOut",
-         y: -20,
-         y: 20,
-        // //  x:300,
-        scrollTrigger: {
-          trigger: box,
-          y: -20,
-          y: 20,
-          scrub: true
-        }
-      })
+    // aboutImg.forEach(box => {
+    //   tl.to(box, {
+    //     x: function(){ return getRand(-20,20) },
+    //     y: function(){ return getRand(-40,40) },
+    //     // transformOrigin:'50% 50%',
+    //     ease:"sine.inOut",
+    //      y: -20,
+    //      y: 20,
+    //     // //  x:300,
+    //     scrollTrigger: {
+    //       trigger: box,
+    //       y: -20,
+    //       y: 20,
+    //       scrub: true
+    //     }
+    //   })
 
-      function getRand(min,max){
-        return Math.random() * (max - min) + min;
-      }
-    })
+    //   function getRand(min,max){
+    //     return Math.random() * (max - min) + min;
+    //   }
+    // })
 
     // aboutImg.forEach((item, index) => {
     //   let ctx = gsap.context(() => {
@@ -75,17 +79,17 @@ const About_card = () => {
     
     
     // return () => ctx.revert();
-  }, []);
+  // }, []);
 
   
   return (
     AboutData.map((data, index) => {
         return (
-            <div className='sh-about-card' ref={app} key={index}>
+            <div className='sh-about-card' ref={a} key={index}>
                 <div className='container'>
-                    <div className={index%2!==0 ? 'sh-about-card__odd-card row d-flex align-items-center justify-content-center' : 'row d-flex align-items-center justify-content-center'}>
+                    <div className={index%2!==0 ? 'sh-about-card__odd-card row d-flex align-items-center justify-content-center fadeIn' : 'row d-flex align-items-center justify-content-center fadeIn'}>
                         <div className='col-12 col-md-6 sh-about-card__left'>
-                            <img ref={circle} className='sh-about-card__img box' src='/images/Home/about.png' alt='' />
+                            <img className='sh-about-card__img box' src='/images/Home/about.png' alt='' />
                             <div className="sh-about-card__element"></div>
                             <span className="pseudo-class"></span>
                         </div>
