@@ -62,7 +62,7 @@ function App() {
           <Layout>
                 <Hero />
                 <About name={sectionRef} class=".fadeIn" />
-                <Clients />
+                <Clients name={sectionRef} class=".fadeIn" />
                 <Testimonial />
                 <Faq />
                 <DownloadApp />

@@ -28,7 +28,8 @@ const clientsImg = [
     }
   ];
 
-const Clients = () => {
+const Clients = (props) => {
+    const nm = props.name;
   return (
     <section className='sh-client'>
         <div className='container'>
@@ -45,8 +46,8 @@ const Clients = () => {
                                     // <div className='col-12 sh-client__img-wrapper' key={index}>
                                     //     <img className='sh-client__img' src={data.img} />
                                     // </div>
-                                  <div className='col-6 col-lg-3 ' key={index}>
-                                      <div  className='sh-client__logos-outwrap w-100 d-flex align-items-center justify-content-center'>
+                                  <div className='col-6 col-lg-3' key={index}>
+                                      <div className='sh-client__logos-outwrap w-100 d-flex align-items-center justify-content-center'>
                                          <div className='sh-client__logos-inwrap d-flex align-items-center justify-content-center' >
                                         <img className='sh-client__img' src={data.img} />
                                     </div>
