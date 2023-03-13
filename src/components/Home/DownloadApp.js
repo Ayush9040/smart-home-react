@@ -18,7 +18,7 @@ const DownloadApp = () => {
                 </div>
 
                 <div className='col-12 col-md-6 sh-download__Screen-wrapper'>
-                    <img className='sh-download__screen' src='/images/Home/about.png' />
+                    <img className='sh-download__screen moveImg' src='/images/Home/about.png' />
                 </div>
             </div>
 

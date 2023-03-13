@@ -89,7 +89,7 @@ const About_card = (props) => {
                 <div className='container'>
                     <div className={index%2!==0 ? 'sh-about-card__odd-card row d-flex align-items-center justify-content-center fadeIn' : 'row d-flex align-items-center justify-content-center fadeIn'}>
                         <div className='col-12 col-md-6 sh-about-card__left'>
-                            <img className='sh-about-card__img box' src='/images/Home/about.png' alt='' />
+                            <img className='sh-about-card__img box moveImg' src='/images/Home/about.png' alt='' />
                             <div className="sh-about-card__element"></div>
                             <span className="pseudo-class"></span>
                         </div>
